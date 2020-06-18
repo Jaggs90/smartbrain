@@ -58,26 +58,26 @@ class Register extends React.Component {
               onChange={this.onNameChange}  
               />
             </div>
-            <div class="mt3">
-          <label class="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
+            <div className="mt3">
+          <label className="db fw6 lh-copy f6" htmlFor="email-address">Email</label>
           <input
-           class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
-           type="email" 
+           className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
+           type="email" autoComplete="email"
            name="email-address"  
            id="email-address"
              onChange={this.onEmailChange}
            />
-        </div>
+        </div><form>
             <div className="mv3">
               <label className="db fw6 lh-copy f6" htmlFor="password">Password</label>
               <input
-               className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" 
-               type="password" 
+               className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+               type="password" autoComplete="password"
                name="password"  
                id="password"
                onChange={this.onPasswordChange}
                />
-            </div>
+            </div></form>
           </fieldset>
           <div className="">
             <input 
